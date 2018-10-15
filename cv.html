@@ -170,13 +170,24 @@
         margin-right: 0.5em;
         color: #0071b5;
       }
+      @media only screen 
+             and (max-device-width: 767px)
+             and (-webkit-min-device-pixel-ratio: 2) {
+        .cv-header,
+        .cv-body {
+          padding:0;
+        }
+        .cv-work-experience {
+          margin-left: 1em;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="container">
     <div class="row">
 
-      <article class="col-8">
+      <article class="col-md-8">
         <header class="cv-header">
           <h1 class="cv-header-title">
             Jonathan Vitela
@@ -294,71 +305,71 @@
           </h2>
           <ul class="cv-skills-list">
             <li class="row cv-skill-group">
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 HTML
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Sass
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Bootstrap
               </div>
             </li>
             <li class="row cv-skill-group">
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 ES6
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 React / Redux
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Webpack
               </div>
             </li>
             <li class="row cv-skill-group">
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 PHP
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Laravel
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Symfony
               </div>
             </li>
             <li class="row cv-skill-group">
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 MySQL
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Java
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 C++
               </div>
             </li>
             <li class="row cv-skill-group">
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Mac OS
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Linux
               </div>
-              <div class="col cv-skill">
+              <div class="col-md cv-skill">
                 <i class="material-icons">check</i>
                 Windows
               </div>
@@ -368,7 +379,7 @@
 
       </article>
 
-      <aside class="col-4 cv-sidebar">
+      <aside class="col-md-4 cv-sidebar">
         <div class="cv-photo">
           <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAADklEQVQIW2NgQAXGZHAAGioAza6+Hk0AAAAASUVORK5CYII="/>
         </div>
