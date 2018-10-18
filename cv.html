@@ -15,11 +15,11 @@
     <title>Jonathan Vitela</title>
     <style>
       body {
+        background:  #6b696b;
         font-family: 'Montserrat', sans-serif;
-        background: black;
       }
-      .container {
-        background: white;
+      .cv-container {
+        background:   #fff;
       }
       .cv-header {
         margin:       2em 0;
@@ -121,18 +121,19 @@
         padding-left: 2em;
       }
       .cv-work-description {
+        position: relative;
         margin-bottom: 1em;
       }
       .cv-work-description-icon {
         position: absolute;
-        left: -0.5em;
+        left: -1.5em;
         color: #fff;
         font-size: 2em;
         line-height: 1.5em;
       }
       .cv-work-description:before {
         position: absolute;
-        left:     -1em;
+        left:     -2.25em;
         display:  block;
         content:  " ";
         width:  2em;
@@ -144,6 +145,15 @@
         line-height: 2em;
         font-size: 1.5em;
       }
+      .cv-work-description:not(:last-of-type):after {
+        position: absolute;
+        top: 3em;
+        left: -2em;
+        bottom: -1em;
+        display: block;
+        content: " ";
+        border-left: 1px solid #0071b5;
+      }
       .cv-work-achievements {
         position:       relative;
         color:          #6b696b;
@@ -152,7 +162,7 @@
       }
       .cv-work-achievements:not(:last-of-type):before {
         position: absolute;
-        top:      -4em;
+        top:       0em;
         left:     -2em;
         bottom:   -3em;
         display:  block;
@@ -170,6 +180,7 @@
         margin-right: 0.5em;
         color: #0071b5;
       }
+
       @media only screen 
              and (max-device-width: 767px)
              and (-webkit-min-device-pixel-ratio: 2) {
@@ -181,10 +192,33 @@
           margin-left: 1em;
         }
       }
+
+      @media print {
+        html, body{ height:100% }
+
+        .cv-container {
+          display: flex;
+          max-width: none;
+
+          width: 100%;
+          height:100%;
+
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+
+          position: absolute;
+          left: 0px;
+          top:  0px;
+          right: 0px;
+          bottom: 0px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="cv-container container">
     <div class="row">
 
       <article class="col-md-8">
@@ -292,9 +326,9 @@
               <span class="cv-daterange">1999 - 2003</span>
             </dt>
             <dd>
-              Studies at National Polytechnic Institute of Mexico.
+              Engineering degree in Computing Systems
               <br/>
-              Obtained engineering degree in Computing Systems
+              National Polytechnic Institute of Mexico.              
             </dd>
           </dl>
         </section>
@@ -402,13 +436,11 @@
             <dd>Mexican (Residence and work permit in Germany)</dd>
 
             <dt>Family Status</dt>
-            <dd>Married (Catholic)</dd>
+            <dd>Married</dd>
 
             <dt>Driving</dt>
             <dd>Licence category B</dd>
 
-            <dt>Dancing</dt>
-            <dd>Salsa</dd>
           </dl>
 
           <h3 class="cv-languages-title">What do I speak</h3>
@@ -433,23 +465,23 @@
             <dt class="col-2">
               <i class="material-icons">phone</i>
             </dt>
-            <dd class="col-10">999999999</dd>
+            <dd class="col-10">+49 17650976693</dd>
 
             <dt class="col-2">
               <i class="material-icons">location_on</i>
             </dt>
-            <dd class="col-10">Lorem ipsum dolor est</dd>
+            <dd class="col-10">Frankfurter Str. 25a Karben. Germany. CP. 61184</dd>
 
             <dt class="col-2">
               <i class="material-icons">email</i>
             </dt>
-            <dd class="col-10">test@test.com</dd>
+            <dd class="col-10">jvitel@gmail.com</dd>
 
             <dt class="col-2">
               <i class="material-icons">share</i>
             </dt>
             <dd class="col-10">
-              https://test.com/jvitela
+              https://linkedin.com/in/jvitela
             </dd>
           </dl>
         </div>
