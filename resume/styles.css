@@ -1,0 +1,27 @@
+@tailwind base;
+
+@tailwind components;
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #ffffff 50%,
+      #3182ce 50%,
+      #3182ce 100%
+    );
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+@tailwind utilities;

@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "resumé",
+  "main": "index.html",
+  "scripts": {
+    "build": "postcss styles.css -o build.css"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "jvitela",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
+}
