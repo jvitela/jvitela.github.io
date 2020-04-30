@@ -26,7 +26,7 @@ Unlike Reselect, Recompute selectors can:
 - have unbounded cache size
 - directly invoke other selectors
 
-Visit the [project page](https://github.com/jvitela/mustache-wax) for more info.
+Visit the [project page](https://github.com/jvitela/recompute) for more info.
 
 ## jvCalendar
 A dependency free javascript library for creating calendars. 
