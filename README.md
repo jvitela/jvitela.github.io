@@ -1,4 +1,3 @@
-# JVitela User Page
 Here is a list of highlighted repositories:
 
 ## Mustache-Wax
