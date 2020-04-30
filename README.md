@@ -38,7 +38,6 @@ This is not ment to be an out-of-the-box solution, instead the goal is to provid
 
 Visit the [project page](https://jvitela.github.io/jvCalendar/) for details.
 
-
 ## Backbone rendering performance
 An adaptation of the famous [Repaint rate challenge](http://mathieuancelin.github.io/js-repaint-perfs/) using Backbone.js and featuring different strategies and optimizations.
 The following render implementations are available:
