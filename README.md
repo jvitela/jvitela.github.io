@@ -1,3 +1,4 @@
+Click here to visit my [Github profile](https://www.github.com/jvitela)
 Here is a list of highlighted repositories:
 
 ## Mustache-Wax
