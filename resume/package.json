@@ -4,7 +4,7 @@
   "description": "resumé",
   "main": "index.html",
   "scripts": {
-    "build": "postcss styles.css -o build.css"
+    "build": "NODE_ENV=production postcss styles.css -o build.css"
   },
   "keywords": [
     "resume"
@@ -12,8 +12,9 @@
   "author": "jvitela",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.8.5",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.5.2"
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
   }
 }
