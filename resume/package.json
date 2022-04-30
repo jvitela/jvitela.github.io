@@ -4,7 +4,8 @@
   "description": "resumé",
   "main": "index.html",
   "scripts": {
-    "build": "NODE_ENV=production postcss styles.css -o build.css"
+    "dev": "./dev.sh",
+    "build": "NODE_ENV=production postcss styles.css -o ./assets/styles/build.css"
   },
   "keywords": [
     "resume"
