@@ -4,8 +4,11 @@
   "description": "resumé",
   "main": "index.html",
   "scripts": {
-    "dev": "./dev.sh",
-    "build": "NODE_ENV=production postcss styles.css -o ./assets/styles/build.css"
+    "build": "npm run build:css",
+    "build:css": "NODE_ENV=production postcss styles.css -o ./assets/styles/build.css",
+    "dev": "./dev.sh & npm run watch",
+    "watch": "npm run watch:css",
+    "watch:css": "chokidar '*.html' --command 'npm run build'"
   },
   "keywords": [
     "resume"
@@ -14,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.0.4",
+    "chokidar-cli": "^3.0.0",
     "postcss": "^8.2.10",
     "postcss-cli": "9.1.0",
     "tailwindcss": "3.0.24"
