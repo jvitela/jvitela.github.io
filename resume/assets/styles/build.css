@@ -499,12 +499,12 @@ body {
   margin-left: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .-mt-4 {
   margin-top: -1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -529,6 +529,14 @@ body {
 
 .h-20 {
   height: 5rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-44 {
